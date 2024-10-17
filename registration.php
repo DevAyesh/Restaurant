@@ -48,12 +48,21 @@ if(isset($_POST['submit'])) {
     <link href="css/animsition.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+<style>
+    .background-image {
+            background-image: url('images/img/background_login.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+</style>
 
-   
 </head>
 
 <body>
-    <div style="background-image: url('images/img/background_login.jpg');">
+    <div class="background-image">
     <header>
 
 <?php 
