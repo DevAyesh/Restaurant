@@ -755,6 +755,7 @@ hr {
     width: 100%;
 }
 
+/*
 .food-item-wrap .figure-wrap:after {
     position: absolute;
     bottom: -1px;
@@ -764,6 +765,7 @@ hr {
     width: 100%;
     height: 5px;
 }
+*/
 
 .food-item-wrap:hover h5>a,
 .food-item-wrap:hover .right-text>a {
@@ -1418,13 +1420,15 @@ App section
 /* ==========================
 *  Footer
 ============================*/
-
+/*
 footer {
     background: url(../images/pattern.png)center repeat;
     padding: 90px 0;
     z-index: 1;
     position: relative;
 }
+
+
 
 .payment-options ul li {
     display: inline-block;
@@ -1503,7 +1507,7 @@ footer li a {
         margin-bottom: 25px
     }
 }
-
+*/
 
 /* ==========================
 *  Inner pages

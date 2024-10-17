@@ -113,7 +113,7 @@ body {
     margin: 0 0 20px;
     padding: 10px 15px;
     box-sizing: border-box;
-    font-wieght: 400;
+    font-weight: 400;
     @include transition(.3s ease);
     &:focus {
       border: 1px solid $accent;
