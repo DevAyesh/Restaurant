@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 150vh;
+            height: 120vh;
             width: 100%;
         }
         body {
@@ -179,9 +179,7 @@ if (isset($_POST['submit'])) {
         </section>
     </div>
 
-    <footer>
-        <?php include 'footer.php'; ?>
-    </footer>
+   
 
     <!-- JavaScript Validation -->
     <script>
@@ -214,7 +212,9 @@ if (isset($_POST['submit'])) {
             return true;
         }
     </script>
-
+     <footer>
+        <?php include 'footer.php'; ?>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
