@@ -5,8 +5,6 @@
 
 This project is about ordering online food from your favorite restaurants. Anybody can create an account and order online. 
 
-
-## Screenshots
 <p>
     Project Members
 • W.A.P.Y.Perera ITBIN-2211-0260 <br>
