@@ -96,6 +96,7 @@ include_once 'product-action.php';
         $rows = mysqli_fetch_array($ress);
         ?>
         
+        
         <section class="inner-page-hero bg-image" data-image-src="images/img/dish.jpeg">
             <div class="profile">
                 <div class="container">
