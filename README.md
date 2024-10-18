@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# RESTAURANT MANAGEMENT SYSTEM
+ RESTAURANT MANAGEMENT SYSTEM
+
 
 ## About the Project
 
@@ -20,5 +20,7 @@ This project is about ordering online food from your favorite restaurants. Anybo
 
 =======
 # Restaurant
+=======
+ 
 IAWD mini project
->>>>>>> 2a0a076d106c329714442753c1859a3933b92591
+
