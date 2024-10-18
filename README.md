@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-# RESTAURANT MANAGEMENT SYSTEM
+ RESTAURANT MANAGEMENT SYSTEM
 
-
-# Restaurant
+ 
 IAWD mini project
 
