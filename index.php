@@ -208,7 +208,7 @@ session_start();
                                     <h5><a href="dishes.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
                                     <div class="product-name">'.$r['slogan'].'</div>
                                     <div class="price-btn-block"> 
-                                        <span class="price">₹'.$r['price'].'</span> 
+                                        <span class="price">Rs:'.$r['price'].'</span> 
                                         <a href="dishes.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> 
                                     </div>
                                 </div>
