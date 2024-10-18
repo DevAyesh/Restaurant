@@ -59,6 +59,7 @@ if(isset($_POST['submit'])) {
         }
 </style>
 
+<<<<<<< HEAD
 </head>
 
 <body>
@@ -72,12 +73,74 @@ if(isset($_POST['submit'])) {
  ?>
  
 </header>
+=======
+    <style>
+        /* Custom form styles */
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .contact-page {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .btn.theme-btn {
+            background-color: #495057;
+            color: white;
+            border-radius: 10px;
+            padding: 12px 20px;
+            font-size: 18px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn.theme-btn:hover {
+            background-color: #FFA500;
+        }
+
+        /* Custom style for responsive and creative design */
+        @media (max-width: 768px) {
+            .contact-page {
+                padding: 30px;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image: url('images/img/background_login.jpg');">
+        <header>
+            <?php include('header.php'); ?>
+        </header>
+>>>>>>> e9bac91f0bb12f16829a72029b85a35fa45e2a63
 
         <div class="page-wrapper">
             <section class="contact-page inner-page">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="widget">
                                 <div class="widget-body">
                                     <!-- Registration Form -->
@@ -118,7 +181,7 @@ if(isset($_POST['submit'])) {
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-12">
                                                 <input type="submit" value="Register" name="submit" class="btn theme-btn">
                                             </div>
                                         </div>
@@ -181,13 +244,9 @@ if(isset($_POST['submit'])) {
     </div>
 
     <footer>
-        <?php
+        <?php include 'footer.php'; ?>
+    </footer>
 
-            include 'footer.php';
-
-            ?>
-
-        </footer>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>

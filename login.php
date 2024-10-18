@@ -10,9 +10,6 @@
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-
-
-
       <link rel="stylesheet" href="css/login.css">
 
 	  <style type="text/css">
@@ -33,14 +30,49 @@
 </head>
 
 <body>
-<header>
+<header id="header" class="header-scroll top-header headrom">
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
+            <a class="navbar-brand" href="index.php">
+                <img width="60%" height="60%"  class="img-rounded" src="images/YummyPicksLogo.png" alt="">
+            </a>
+            <div class="collapse navbar-toggleable-md float-lg-right" id="mainNavbarCollapse">
+                <ul class="nav navbar-nav">
+                    <!-- Home Tab -->
+                    <li class="nav-item">
+                        <a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'index.php') echo 'active-tab'; ?>" href="index.php">Home</a>
+                    </li>
+                    
+                    <!-- Restaurants Tab -->
+                    <li class="nav-item">
+                        <a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'restaurants.php') echo 'active-tab'; ?>" href="restaurants.php">Restaurants</a>
+                    </li>
 
-<?php 
+                    <!-- Contact Us Tab -->
+                    <li class="nav-item">
+                        <a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'contact.php') echo 'active-tab'; ?>" href="contact.php">Contact Us</a>
+                    </li>
 
-    include('header.php'); 
+                    <!-- About Us Tab -->
+                    <li class="nav-item">
+                        <a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'about.php') echo 'active-tab'; ?>" href="about.php">About Us</a>
+                    </li>
 
- ?>
- 
+                    <!-- Conditional Login/Signup or Orders/Logout -->
+                    <?php
+                        if(empty($_SESSION["user_id"])) {
+                            echo '<li class="nav-item"><a href="login.php" class="nav-link '; if(basename($_SERVER['PHP_SELF']) == 'login.php') echo 'active-tab'; echo '">Login</a></li>';
+                            echo '<li class="nav-item"><a href="registration.php" class="nav-link '; if(basename($_SERVER['PHP_SELF']) == 'registration.php') echo 'active-tab'; echo '">Signup</a></li>';
+                        } else {
+                            echo '<li class="nav-item"><a href="your_orders.php" class="nav-link '; if(basename($_SERVER['PHP_SELF']) == 'your_orders.php') echo 'active-tab'; echo '">Your Orders</a></li>';
+                            echo '<li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>';
+                        }
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 <div style=" background-image: url('images/img/background_login.jpg');">
 
@@ -107,14 +139,10 @@ if(isset($_POST['submit']))
 
 
    
+        
   <footer>
-        <?php
-
-            include 'footer.php';
-
-            ?>
-
-        </footer>
+        <?php include 'footer.php'; ?>
+    </footer>
        
 
 

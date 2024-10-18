@@ -139,7 +139,7 @@ include_once 'product-action.php';
                                 </div>
                                 <div class="form-group row no-gutter">
                                     <div class="col-xs-8">
-                                        <input type="text" class="form-control b-r-0" value=<?php echo "₹".$item["price"]; ?> readonly id="exampleSelect1">
+                                        <input type="text" class="form-control b-r-0" value=<?php echo "Rs:".$item["price"]; ?> readonly id="exampleSelect1">
                                     </div>
                                     <div class="col-xs-4">
                                         <input class="form-control" type="text" readonly value='<?php echo $item["quantity"]; ?>' id="example-number-input"> 
@@ -154,7 +154,7 @@ include_once 'product-action.php';
                         <div class="widget-body">
                             <div class="price-wrap text-xs-center">
                                 <p>TOTAL</p>
-                                <h3 class="value"><strong><?php echo "₹".$item_total; ?></strong></h3>
+                                <h3 class="value"><strong><?php echo "Rs:".$item_total; ?></strong></h3>
                                 <p>Free Delivery!!!</p>
                                 <?php
                                 if($item_total==0){
@@ -199,7 +199,7 @@ include_once 'product-action.php';
                                             <div class="rest-descr">
                                                 <h6><a href="#"><?php echo $product['title']; ?></a></h6>
                                                 <p><?php echo $product['description']; ?></p>
-                                                <p><strong>Price: </strong>₹<?php echo $product['price']; ?></p>
+                                                <p><strong>Price: </strong>Rs:<?php echo $product['price']; ?></p>
                                                 <input type="hidden" name="quantity" value="1" />
                                                 <button type="submit" class="btn theme-btn">Add to Cart</button>
                                             </div>

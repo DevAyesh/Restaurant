@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
 include("connection/connect.php");  
 error_reporting(0);  
 session_start(); 
 
 ?>
-<head>
+<head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
@@ -18,132 +16,17 @@ session_start();
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animsition.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> </head>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link href="css/style.css" rel="stylesheet">
-   
-   <style>
-        /* Optional custom styling */
-        .swiper-container {
-            width: 100%;
-            padding-top: 20px;
-            padding-bottom: 50px;
-        }
-        .swiper-slide {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .food-item-wrap {
-            width: 100%;
-            max-width: 300px;
-        }
-        .figure-wrap img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .content {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .how-it-works {
-        padding: 60px 0;
-        background: #f8f8f8;
-    }
-
-    .how-it-works h2 {
-        font-size: 2.5em;
-        margin-bottom: 40px;
-    }
-
-    .how-it-works-solution {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .how-it-works-steps {
-        text-align: center;
-        opacity: 0; /* Initially hidden */
-        transform: translateY(20px); /* Move down slightly */
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        animation: fadeInUp 0.5s forwards; /* Animation applied */
-    }
-
-    .how-it-works-steps.visible {
-        opacity: 1; /* Become visible */
-        transform: translateY(0); /* Move to original position */
-    }
-
-    .icon {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 20px;
-        animation: rotate 1s ease-in-out infinite; /* Rotate animation */
-    }
-
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
-        }
-        50% {
-            transform: rotate(50deg);
-        }
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .pay-info {
-        font-size: 1.5em;
-        margin-top: 20px;
-        color: #333;
-    }
-    </style>
- </head>
+    <link href="css/style.css" rel="stylesheet"> 
+    
+ 
+</head>
 
 <body class="home">
-
-        <header>
-            <?php include('header.php'); ?>
-        </header>
-
-
-    <link href="css/style.css" rel="stylesheet">
- </head>
-
-        <body class="home">
     
-      
-
-
-        
 <header>
-           
-    <body class="home">
-    
-    <?php 
-
-        include('header.php'); 
-
-    ?>
- 
+        <?php include('header.php'); ?>
     </header>
-       
+
         <section class="hero bg-image" data-image-src="images/img/main.jpg">
             <div class="hero-inner">
                 <div class="container text-center hero-text font-white">
@@ -188,41 +71,33 @@ session_start();
 	
      
         <section class="popular">
-    <div class="container">
-        <div class="title text-xs-center m-b-30">
-            <h2>Popular Dishes of the Month</h2>
-            <p class="lead">The easiest way to your favourite food</p>
-        </div>
-        <!-- Swiper Container -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <?php
-                $query_res = mysqli_query($db, "SELECT * FROM dishes LIMIT 6"); 
-                while ($r = mysqli_fetch_array($query_res)) {
-                    echo '<div class="swiper-slide">
-                            <div class="food-item-wrap">
-                                <div class="figure-wrap">
-                                    <img src="admin/Res_img/dishes/'.$r['img'].'" alt="Dish Image" />
-                                </div>
-                                <div class="content">
-                                    <h5><a href="dishes.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
-                                    <div class="product-name">'.$r['slogan'].'</div>
-                                    <div class="price-btn-block"> 
-                                        <span class="price">₹'.$r['price'].'</span> 
-                                        <a href="dishes.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>';
-                }
-                ?>
+            <div class="container">
+                <div class="title text-xs-center m-b-30">
+                    <h2>Popular Dishes of the Month</h2>
+                    <p class="lead">The easiest way to your favourite food</p>
+                </div>
+                <div class="row">
+						<?php 					
+						$query_res= mysqli_query($db,"select * from dishes LIMIT 3"); 
+                                while($r=mysqli_fetch_array($query_res))
+                                {
+                                        
+                                    echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item">
+                                            <div class="food-item-wrap">
+                                                <div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/'.$r['img'].'"></div>
+                                                <div class="content">
+                                                    <h5><a href="dishes.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
+                                                    <div class="product-name">'.$r['slogan'].'</div>
+                                                    <div class="price-btn-block"> <span class="price">Rs:'.$r['price'].'</span> <a href="dishes.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                                </div>
+                                                
+                                            </div>
+                                    </div>';                                      
+                                }	
+						?>
+                </div>
             </div>
-            <!-- Add Pagination and Navigation -->
-            <div class="swiper-pagination"></div>
-            
-        </div>
-    </div>
-</section>
+        </section>
  
         <section class="how-it-works">
             <div class="container">
@@ -270,7 +145,7 @@ session_start();
                 </div>
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <p class="pay-info">Cash on Delivery</p>
+                        <p class="pay-info">Cash on Delivery Available</p>
                     </div>
                 </div>
             </div>
@@ -332,8 +207,10 @@ session_start();
 													</div>';
 										  }
 						
-						
+                                     
+				
 						?>
+						
 							
 					
                     </div>
@@ -342,16 +219,16 @@ session_start();
                
             </div>
         </section>
+
         
-      
-        <footer>
         <?php
 
-            include 'footer.php';
+             include 'footer.php';
 
             ?>
 
-        </footer>
+    
+    
 
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
@@ -361,27 +238,6 @@ session_start();
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/headroom.js"></script>
     <script src="js/foodpicky.min.js"></script>
-    <!-- Include Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,  // Display 3 slides at a time
-        spaceBetween: 30, // Optional: space between slides in pixels
-        loop: true, // Optional: loop slides
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        // No autoplay for manual navigation
-        autoplay: true,
-    });
-</script>
 </body>
 
 </html>

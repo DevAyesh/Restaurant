@@ -137,7 +137,7 @@
     </div>
 
     <div class="footer-bottom">
-        <p>© 2024 Yummy. All Rights Reserved. Designed by BootstrapMade</p>
+        <p>© 2024 YummyPicks. All Rights Reserved.</p>
     </div>
 
     <a href="#" class="back-to-top" onclick="scrollToTop()">&#8679;</a>

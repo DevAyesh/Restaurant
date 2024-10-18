@@ -130,17 +130,17 @@ if (isset($_POST['submit'])) {
                     <div class="info-box">
                         <i class="fa fa-map-marker"></i>
                         <h4>Address</h4>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+                        <p>No.8, Alfred House Rd, Colombo 03, Sri Lanka</p>
                     </div>
                     <div class="info-box">
                         <i class="fa fa-phone"></i>
                         <h4>Call Us</h4>
-                        <p>+1 5589 55488 55</p>
+                        <p>011-2744464</p>
                     </div>
                     <div class="info-box">
                         <i class="fa fa-envelope"></i>
                         <h4>Email Us</h4>
-                        <p>info@example.com</p>
+                        <p>yummypicks@gmail.com</p>
                     </div>
                 </div>
 

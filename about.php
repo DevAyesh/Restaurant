@@ -22,6 +22,7 @@
         .why-us .why-box h3 {
             font-size: 28px;
             color: #333;
+            padding-top: 40px;
         }
         .why-us .why-box p {
             font-size: 18px;
@@ -130,8 +131,8 @@
         <div class="icon-boxes">
             <div class="icon-box">
                 <div class="icon">🔍</div>
-                <h4>Feature One</h4>
-                <p>Short description of feature one.</p>
+                <h4>Easy to find</h4>
+                <p> find what you prefer </p>
             </div>
             <div class="icon-box">
                 <div class="icon">💎</div>
@@ -140,7 +141,7 @@
             </div>
             <div class="icon-box">
                 <div class="icon">📦</div>
-                <h4>Feature Three</h4>
+                <h4>step into door </h4>
                 <p>Short description of feature three.</p>
             </div>
         </div>
