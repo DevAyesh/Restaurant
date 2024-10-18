@@ -59,21 +59,6 @@ if(isset($_POST['submit'])) {
         }
 </style>
 
-<<<<<<< HEAD
-</head>
-
-<body>
-    <div class="background-image">
-    <header>
-
-<?php 
-
-    include('header.php'); 
-
- ?>
- 
-</header>
-=======
     <style>
         /* Custom form styles */
         .page-wrapper {
@@ -134,7 +119,6 @@ if(isset($_POST['submit'])) {
         <header>
             <?php include('header.php'); ?>
         </header>
->>>>>>> e9bac91f0bb12f16829a72029b85a35fa45e2a63
 
         <div class="page-wrapper">
             <section class="contact-page inner-page">
