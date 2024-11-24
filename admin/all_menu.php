@@ -227,7 +227,7 @@ session_start();
              
             </div>
          
-            <footer class="footer"> © 2021 All rights reserved. </footer>
+            <footer class="footer"> © 2024 YummyPicks. All Rights Reserved. </footer>
            
         </div>
        

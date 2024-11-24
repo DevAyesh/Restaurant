@@ -339,7 +339,7 @@ if (isset($_POST['submit'])) {
                 </div>
             </div>
         </div>
-        <footer class="footer">© 2024 All rights reserved. Developed by Food Mania.</footer>
+        <footer class="footer">© 2024 YummyPicks. All Rights Reserved.</footer>
     </div>
 
     <script src="js/lib/jquery/jquery.min.js"></script>
